@@ -1,0 +1,28 @@
+package test002;
+
+import java.util.Scanner;
+
+public class lianxi{
+
+	public static void main(String[]argStrings)
+	{
+		Scanner b=new Scanner(System.in);
+		int nums=b.nextInt();
+		renturn 0;
+	}
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+    	int[] b=new int[2];
+    	for(int i=0;i<nums.length-1;i++) {
+    		for(int j=i+1;j<nums.length;j++) {
+    			if(nums[i]+nums[j]==target) {
+    			b[0]=i>j?j:i;
+    			b[1]=i>j?i:j;  			}
+    		}
+    	}
+    	return b;
+
+    }
+}
+}
